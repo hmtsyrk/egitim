@@ -82,7 +82,7 @@ html, body {
 
 <div class="content">
     <div class="title m-b-md">
-        Hoş Geldiniz {{$ismim}}
+        Hoş Geldin {{$ismim}}
     </div>
 
     <div class="links">
