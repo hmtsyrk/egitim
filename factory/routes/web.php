@@ -16,19 +16,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/index', "AnasayfaController@index");
-
-Route::get("/iletisim", "IletisiController@index");
-
-// post metodu
-/**
-Route::post("iletisimgonder","IletisimController@iletisim")->name("iletisim.gonder");
-
-Route::put("iletisimgonder","IletisimController@iletisimguncelle")->name("iletisim.gonder");
-Route::update("iletisimgonder","IletisimController@iletisimguncelle")->name("iletisim.gonder");
-*/
-
-//resource
-
-Route::resource("iletisim", "IletisiController");
