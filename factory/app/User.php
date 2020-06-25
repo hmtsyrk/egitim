@@ -37,7 +37,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function yazis(){
-        return $this->hasMany("App\Yazis", "user_id");
+    // bir kullanıcıya ait olan yazıları bulmak için
+    public function yazilari(){
+        return $this->hasMany("App\Yazis", "user_id","id");
     }
 }
