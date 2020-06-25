@@ -10,7 +10,7 @@ class Yazi extends Model
     protected $guarded = [];
 
     public function kategori() {
-        return $this->belongsTo("App\Kategori","kategori_id");
+        return $this->belongsTo("App\Kategori","kategori_id", "id");
         //migrate dosyalarında foreign satırları ilişkilendirmeleri için bu fonksiyon yazılmalı
     }
 

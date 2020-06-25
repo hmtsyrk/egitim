@@ -7,6 +7,7 @@
     @foreach($user->yazilari as $yazilari)
     {{$yazilari->baslik}}
     {{$yazilari->icerik}}
+    @endforeach
 @endsection
 
 @section('content')
